@@ -15,7 +15,7 @@
 	      </div>
               <div class="panel-body">
 
-<% if item.presisted? %>
+<% if item.persisted? %>
 
                 <p class="item-title">
 
@@ -36,6 +36,8 @@
 			<% if logged_in? %>
 
 	<%= render 'ownerships/want_button',item:item %>
+
+  <%= render 'ownerships/have_button',item:item %>
 
 <% end %>
 
